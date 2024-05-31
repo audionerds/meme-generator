@@ -1,0 +1,136 @@
+/* styles the example box */
+#exampleMeme {
+  position: relative;
+  margin-top: 20px;
+}
+
+/* postions and styles the example meme top text: */
+#memeTextTop {
+  background-color: transparent;
+  font-size: 60px;
+  font-family: "Impact";
+  color: white;
+  text-shadow: black 0px 0px 10px;
+  width: 600px;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* postions and styles the meme bottom text: */
+#memeTextBot {
+  background-color: transparent;
+  font-size: 60px;
+  font-family: "Impact";
+  color: white;
+  text-shadow: black 0px 0px 10px;
+  width: 600px;
+  position: absolute;
+  top: 450px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* style for top text form input: */
+#topText {
+  margin: 10px;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* style for bottom text form input: */
+#bottomText {
+  margin: 10px;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* style for url form input: */
+#memePicture {
+  margin: 10px;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+  position: relative;
+}
+
+/* style for the create meme button */
+#createButton {
+  margin: 10px;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* style for the created meme list */
+#memeContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#memeContainer img {
+  width: 30%;
+  height: auto;
+}
+
+/* style for the delete selected button */
+#deleteButton {
+  margin: 10px;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* style for selected memes */
+.selected {
+  border: 3px solid red;
+}
+
+/* style for the floating banner */
+#banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  z-index: 1000;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+#banner img {
+  height: 60px;
+  margin-right: 10px;
+}
+
+#banner p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* style for the body: */
+body > img {
+  width: 600px;
+  height: 500px;
+}
+
+body {
+  background-color: black;
+  color: white;
+  justify-content: center;
+  padding: 70px;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}

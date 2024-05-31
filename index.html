@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <div id="banner">
+    <img src="audionerds-logo.png" alt="Audionerds Logo" />
+    <p>Created by Audionerds</p>
+  </div>
+  <h1>Meme Generator</h1>
+  <body>
+    <form id="memeForm">
+      Top Text:
+      <input
+        type="text"
+        id="topText"
+        placeholder="Enter Top Text"
+        maxlength="70"
+        oninput="updateTextTop()"
+      />
+      <br />
+      Bottom Text:
+      <input
+        type="text"
+        id="bottomText"
+        placeholder="Enter Bottom Text"
+        maxlength="70"
+        oninput="updateTextBot()"
+      />
+      <br />
+      URL:
+      <input
+        type="url"
+        id="memePicture"
+        placeholder="Enter URL Link"
+        oninput="updateImage()"
+      />
+      <button type="submit" id="createButton">Create Meme</button>
+    </form>
+
+    <div id="exampleMeme">
+      <img id="memeImage" src="" height="500" width="600" />
+      <div id="memeTextTop">Example text here</div>
+      <div id="memeTextBot">Example text here</div>
+    </div>
+
+    <h1>Created Memes</h1>
+    <button type="button" id="deleteButton" onclick="removeSelectedImages()">
+      Delete Selected
+    </button>
+    <br />
+    <div id="newMemeDiv"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
